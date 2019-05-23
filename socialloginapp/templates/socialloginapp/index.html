@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>
+      Index
+    </title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"/>
+  </head>
+  <body>
+    <div class="section"> 
+     <article class="media">
+		  <figure class="media-left">
+		    <p class="image is-64x64">
+		      <img src="{{ user.picture.url }}">
+		    </p>
+		  </figure>
+		  <div class="media-content">
+		    <div class="content">
+		      <p>
+		        <strong> {{ user.first_name }} {{ user.last_name }} </strong>
+		        <br>
+		      </p>
+		    </div>
+		    <nav class="level is-mobile">
+		      <div class="level-left">
+		        <a class="level-item">
+		          <span class="icon is-small"><i class="fas fa-reply"></i></span>
+		        </a>
+		        <a class="level-item">
+		          <span class="icon is-small"><i class="fas fa-retweet"></i></span>
+		        </a>
+		        <a class="level-item">
+		          <span class="icon is-small"><i class="fas fa-heart"></i></span>
+		        </a>
+		      </div>
+		    </nav>
+		  </div>
+		  <div class="media-right">
+		    <button class="delete"></button>
+		  </div>
+		</article> 
+    </div>
+  </body>
+</html>
